@@ -4,19 +4,101 @@
 <head>
 	<!-- Use this section for your webpage metadata - more detail https://www.w3schools.com/html/html_head.asp -->
 
-	<title>*insert appropriate title*</title>
+	<title>Week 10 | Fake News</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
 	<!--  <link rel="stylesheet" href="filepath/filename.css"> -->
 	<!--  When you have a stylesheet you can uncomment the link element above and edit the href to suit your file system and 		point to your CSS sheet -->
 </head>
 
 <body>
-
-	<!-- begin the main section of the page-->
 	<div>
-	<img src="images/construction.jpg">
+		<!-- begin the main section of the homepage -->
+		<div id="menu">
+			<ul>
+				<li><a href="index.html">Homepage</a></li>
+				<li> <a href="week1.html">Week 1</a><br></li>
+				<li><a href="week2.html">Week 2 </a><br></li>
+				<li><a href="week3.html">Week 3 </a><br></li>
+				<li><a href="week4.html">Week 4 </a><br></li>
+				<li><a href="week5.html">Week 5 </a><br></li>
+				<li><a href="week6.html">Week 6 </a><br></li>
+				<li><a href="week7.html">Week 7 </a><br></li>
+				<li><a href="week8.html">Week 8 </a><br></li>
+				<li><a href="week9.html">Week 9 </a><br></li>
+				<li><a href="week10.html">Week 10 </a></li>
+			</ul>
+		</div>
+		<div id="header">
+			<div class="header-text">
+			<h1 class=" no-margin padding-top">Fake News and the Real Life Consequences</h1>
+	
+			<p >I want to create a website about the impact of Fake News and its real-life consequences. Essentially, I envision a website organized into sections, like the format of the 7 Deadly Sins website we discussed in Week 3. I want my website to consist of extensive information with regards to the most notorious fake news stories out there, as well as tips on how to spot fake news.
+			</p>
+		</div>
+			<!-- consider whether any other multi-media elements would be appropriate to achieve your chosen design -->
+		</div>
+
+		<div id="container">
+	<!-- begin the main section of the page-->
+		<h1>Week 10 - IL activity: Evaluating accessible design</h1>
+		
+		<h2>Task 1: Evaluate websites against accessibility standards</h2>
+		<b>WAVE Web Accessibility Evaluation Tool</b>
+		<img src="images/img015-mada-WAVE1.png" alt="Wave Results" >
+		<br><br>
+		In this image it is clear to see that the contrast ratio passess the standards set for testing. It passes as “Normal” which means that the text used on the website is easily readable for most users, even those with visual impairments. There are however some contrast errors which means that some elements on the website don’t have a good enough color contrast which won’t support users with poor vision or colour blindness. 
+<br><br>
+<img src="images/img016-mada-WAVE2.png" alt="Wave Results" >
+<br><br>
+This image shows that there are a few random errors on the website, one of them being a critical accessibility issue. There are more contrast errors but it is also clear that there are 48 features to help people navigate the webpage easily. There are also lots of HTML elements which will help with navigation purposes. There also seems to be many ARIA elements which enhances the accessibility for people who rely on assistive technology. 
+<br><br>
+<b>WebAIM Contrast Checker:</b><br>
+<img src="images/img017-mada-Webaim.png" alt="WebAIM Results" >
+<br>
+The image above shows a contrast ratio of 10.01:1 which means the colours have a high contrast ratio. It also makes it clear that the normal text, large text and graphical objects and user interface components all pass the test, most of them exceeding the nexessary contrast ratio. People with visual impairments would have no problem reading the text on this website.
+<br><br>
+<b>Readability Test Tool:</b>
+<img src="images/img018-mada-webFX1.png" alt="WebFX Results" >
+<br>
+From the image above it is clear to see that it has an average reading ease of about 59 of 100. It states that it should be easily understood by 12 to 13 year olds.
+This result is quite good for BBC, as the content is accessible to a wide audience which is important for a news website that aims to inform many demographics who might have different reading abilities. The BBC is also a global news platform so they might have users who are not native english speakers, so this score also proves that people with a very basic proficiency in the English language would be able to understand the content. 
+
+<br>
+<img src="images/img019-mada-webFX2.png" alt="WebFX Results" >
+<br>
+These results show that there might be room for improvement in terms of lessening the amount of complex words and shortening the sentence lengths. This would make it easier for people to remain concentrated and informed. 
+		<p>
+			<h2>Task 2: Accessibility Reflection</h2>
+			I believe that my website hits the mark for most of the accessibility requirements. From a visual design perspective, my website incorporates a clear, readable font that contrasts the background colour effectively. I researched which colours best contrast with each other and what colours are deemed as accessible before making any colour or font changes to my website. With the way my content is structured, I often make use of bullet points or tables to break up the lenghty paragraphs, making the content more digestible. I also use various headings to draw attention to important sections. I have centred all of my content and made sure my sentences all end at the same point so that it looks neat and easy to read. I also converted all of my tables that were originally images, into html tables so that people can highlight text if they  want to change the layout format text to make it bigger or convert it to braille. My navigation is also very clear with the navigation bar being placed at the top of each webpage. I have incorporated multimedia elements that allow users to play, pause, increase or decrease volume and increase speed. I did user testing with a cousin of mine who is aged 19 and a friend who is aged 22 to test the website for accessibility and understanding of my content, and they both agreed that the content was easy to understand and the website was user-friendly with a good navigation. I think the areas for improvement could have been creating transcripts for my audio and video content, so that those multimedia elements are accessible to people with hearing disabilities. I also could have created a phone browser version of my website so that people who can only access it on phones, are able to do so without having any issues with the layout. According to the WebAIM million guidelines for accessibility, I reached all targets successfully. Therefore, upon reflection I believe that my website is accessible according to widely accepted guidelines.  
+<br>
+<h1>Week 10 - Lab activity: Accessibility</h1>
+			<video id="Subtitled Video" width="800" height="600" controls>
+				<source src="images/vid003-mada-fnews-edited.mp4" type="video/mp4">
+				<source src="images/vid003-mada-fnews-edited.mp4" type="video/webm">
+				<track label="English" kind="subtitles" srclang="en" src="images/Script.vtt" default>
+				</video>
+
+
+I tried different variations of the WEBVTT file but unfortunately I was unable to get the expected result of subtitles. 
+
+<h2>Reflection On Moving Forward With Accessibility</h2>
+
+<p>
+	I will improve by creating transcriptions by learning how to code them into HTML, so that on the side of the video, someone can follow along via reading. Alternatively, I need to learn how to code captions as this could serve a similar purpose properly. I will have to continue to practice and go through trial-and-error periods. I can do this by watching YouTube tutorials and reading more articles. Secondly, I could also read more articles on creating the ultimate accessible website, considering accessibility even in the smallest of decisions. Thirdly, I can add more images to my website to increase engagement and break up the text. 
+
+</p>
+
+
+
+
+		</p>
+
 		
 	</div>
+	<footer>
 	</footer>
 	<!-- end navigation menu -->
 
